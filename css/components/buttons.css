@@ -1,7 +1,10 @@
 .gc-btn {
+  text-align: center;
   background-color: rgb(76, 163, 141);
   color: white;
   padding: 8px;
-  border-radius: 4px;
+  border-radius: 8px;
   text-decoration: none;
+  width: 135px;
+  font-size: 12px;
 }

@@ -1,5 +1,8 @@
+@import "./config/reset.css";
 @import "./config/fonts.css";
 
 @import "./components/navbar.css";
 @import "./components/logo.css";
 @import "./components/buttons.css";
+@import "./components/cover.css";
+@import "./components/cards.css";
