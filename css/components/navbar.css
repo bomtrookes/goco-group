@@ -1,0 +1,17 @@
+nav {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;;
+}
+
+#nav-links {
+  display: flex;
+  list-style: none;
+  color: rgb(17, 48, 37);
+  font-weight: 500;
+}
+#nav-links li {
+  padding: 0 8px;
+}

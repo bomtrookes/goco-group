@@ -1,0 +1,5 @@
+@import "./config/fonts.css";
+
+@import "./components/navbar.css";
+@import "./components/logo.css";
+@import "./components/buttons.css";
