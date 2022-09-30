@@ -1,0 +1,10 @@
+footer {
+  margin: 0 8rem;
+}
+#pinpoint, #pinpoint div {
+  display: flex;
+  justify-content: space-between;
+}
+#pinpoint p {
+  padding-right: 24px;
+}

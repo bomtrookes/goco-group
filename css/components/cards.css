@@ -1,29 +1,75 @@
-.container {
+.cards {
+  margin: 0 8rem;
+  padding: 24px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "join join-img"
+  "col-img col"
+  "grow emma"
+  "glass glass"
+  "alex alex"
+  "info info";
+}
+
+#join {
+  grid-area: join;
+}
+#join img {
+  grid-area: join-img;
+}
+#col {
+  grid-area: col;
+}
+#col img {
+  grid-area: col-img;
+}
+#grow {
+  grid-area: grow;
+}
+#emma {
+  grid-area: emma;
+  position: relative;
+  object-fit: contain;
+}
+#emma div {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+#glass {
+  display: grid;
+  place-items: center;
+  grid-area: glass;
+  text-align: center;
+}
+#glass img {
+  width: 200px;
+}
+#alex {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0 4rem;
+  justify-content: center;
+  grid-area: alex;
+  position: relative;
+  object-fit: contain;
 }
-section {
-  /* display: flex; */
-  height: 315px;
-  width: 80%;
-  columns: 2;
-  font-family: 'Montserrat', sans-serif;
-  color: rgb(17, 48, 37);
-  margin-bottom: 4rem;
+#alex div {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
 }
-section h2 {
-  font-size: 2.4rem;
-  line-height:
+#info {
+  grid-area: info;
+  display: flex;
+  justify-content: center;
 }
-section p {
-  font-size: 12px;
-  line-height: 18px;
-}
-section img {
-  width: 100%;
-  border-radius: 8px;
+#info div {
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  margin: 0 8px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
 }
 .card {
   display: flex;
@@ -31,13 +77,4 @@ section img {
   justify-content: space-between;
   height: 100%;
   width: 100%;
-}
-
-#collab {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-between;
-}
-#collab img {
-  width: 50%;
 }
