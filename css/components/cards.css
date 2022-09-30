@@ -1,8 +1,8 @@
 .cards {
-  margin: 0 8rem;
-  padding: 24px;
+  margin: 0 12rem;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  row-gap: 4rem;
+  grid-template-columns: 50% 50%;
   grid-template-areas: "join join-img"
   "col-img col"
   "grow emma"
@@ -14,14 +14,18 @@
 #join {
   grid-area: join;
 }
-#join img {
+#join-img {
   grid-area: join-img;
+  width: 96%;
+  border-radius: 8px;
 }
 #col {
   grid-area: col;
 }
-#col img {
+#col-img {
   grid-area: col-img;
+  width: 96%;
+  border-radius: 8px;
 }
 #grow {
   grid-area: grow;
@@ -29,13 +33,23 @@
 #emma {
   grid-area: emma;
   position: relative;
-  object-fit: contain;
 }
 #emma div {
   position: absolute;
-  top: 50%;
+  top: 40%;
   transform: translateY(-50%);
   text-align: center;
+  width: 46%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 19px;
+  padding-left: 40px;
+}
+#emma img {
+  width: 95%;
+  border-radius: 8px;
 }
 #glass {
   display: grid;
@@ -72,9 +86,5 @@
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
 }
 .card {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
-  width: 100%;
+  padding: 37px;
 }

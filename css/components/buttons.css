@@ -1,21 +1,22 @@
-.gc-btn {
+.gc-btn, .gd-btn {
   text-align: center;
   background-color: rgb(76, 163, 141);
   color: white;
   padding: 8px;
   border-radius: 8px;
   text-decoration: none;
-  width: 135px;
+  width: 145px;
   font-size: 12px;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 16px;
 }
 
 .gd-btn {
-  text-align: center;
   background-color: rgb(77, 171, 64);
-  color: white;
-  padding: 8px;
-  border-radius: 8px;
-  text-decoration: none;
-  width: 135px;
-  font-size: 12px;
+}
+
+#grow .gc-btn {
+  width: 160px;
 }
