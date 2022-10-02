@@ -55,33 +55,63 @@
   display: grid;
   place-items: center;
   grid-area: glass;
+  margin: 6.5rem 0;
   text-align: center;
 }
 #glass img {
   width: 200px;
 }
+#gd-logo {
+  margin-bottom: 2rem;
+}
+#glass h2 {
+  font-size: 24px;
+  margin-bottom: 1rem;
+}
+#gd-date {
+  font-size: 10px;
+}
 #alex {
   display: flex;
   justify-content: center;
   grid-area: alex;
-  position: relative;
-  object-fit: contain;
+  width: 100;
 }
-#alex div {
+#alex-container {
+  width: 42%;
+  position: relative;
+}
+#alex img {
+  border-radius: 8px;
+  width: 100%;
+}
+#alex-text {
   position: absolute;
-  top: 50%;
+  padding-left: 1.4rem;
+  top: 45%;
+  width: 55%;
   transform: translateY(-50%);
   text-align: center;
+  font-weight: 800;
+}
+#alex-text p {
+  margin-bottom: 0.5rem;
+}
+#alex-text p:last-child {
+  font-weight: 400;
 }
 #info {
   grid-area: info;
   display: flex;
   justify-content: center;
+  margin-top: 4rem;
+  margin-bottom: 6rem;
 }
 #info div {
   display: grid;
   place-items: center;
-  padding: 24px;
+  padding: 64px;
+  border-radius: 16px;
   margin: 0 8px;
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
 }
