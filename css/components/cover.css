@@ -1,0 +1,19 @@
+#cover {
+  display: grid;
+  place-items: center;
+  background-image: url("../../assets/apz9evdgfnmmkna3cdrd.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 560px;
+  color: white;
+  margin-bottom: 4rem;
+}
+#cover-title {
+  display: grid;
+  place-items: center;
+  font-family: 'Montserrat', sans-serif;
+}
+#cover-title h2 {
+  margin-bottom: 2rem;
+}

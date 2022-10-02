@@ -1,0 +1,90 @@
+.cards {
+  margin: 0 12rem;
+  display: grid;
+  row-gap: 4rem;
+  grid-template-columns: 50% 50%;
+  grid-template-areas: "join join-img"
+  "col-img col"
+  "grow emma"
+  "glass glass"
+  "alex alex"
+  "info info";
+}
+
+#join {
+  grid-area: join;
+}
+#join-img {
+  grid-area: join-img;
+  width: 96%;
+  border-radius: 8px;
+}
+#col {
+  grid-area: col;
+}
+#col-img {
+  grid-area: col-img;
+  width: 96%;
+  border-radius: 8px;
+}
+#grow {
+  grid-area: grow;
+}
+#emma {
+  grid-area: emma;
+  position: relative;
+}
+#emma div {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  text-align: center;
+  width: 46%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 19px;
+  padding-left: 40px;
+}
+#emma img {
+  width: 95%;
+  border-radius: 8px;
+}
+#glass {
+  display: grid;
+  place-items: center;
+  grid-area: glass;
+  text-align: center;
+}
+#glass img {
+  width: 200px;
+}
+#alex {
+  display: flex;
+  justify-content: center;
+  grid-area: alex;
+  position: relative;
+  object-fit: contain;
+}
+#alex div {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+#info {
+  grid-area: info;
+  display: flex;
+  justify-content: center;
+}
+#info div {
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  margin: 0 8px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+}
+.card {
+  padding: 37px;
+}
