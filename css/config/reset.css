@@ -4,3 +4,15 @@
   font-family: 'Montserrat', sans-serif;
   /* background-color: rgba(75, 175, 75, 0.2); */
 }
+body {
+  min-width: 325px;
+  position: relative;
+  overflow-x: hidden;
+}
+ul {
+  padding-left: 0;
+}
+img {
+  max-width: 100%;
+  display: block;
+}

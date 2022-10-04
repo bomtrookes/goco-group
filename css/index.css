@@ -1,9 +1,10 @@
 @import "./config/reset.css";
 @import "./config/fonts.css";
 
+@import "./components/burger.css";
+@import "./components/buttons.css";
 @import "./components/navbar.css";
 @import "./components/logo.css";
-@import "./components/buttons.css";
 @import "./components/cover.css";
 @import "./components/cards.css";
 @import "./components/footer.css";

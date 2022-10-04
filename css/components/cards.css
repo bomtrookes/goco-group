@@ -1,6 +1,7 @@
 .cards {
-  margin: 0 12rem;
+  margin: 0 12vw;
   display: grid;
+  place-items: center;
   row-gap: 4rem;
   grid-template-columns: 50% 50%;
   grid-template-areas: "join join-img"
@@ -9,6 +10,24 @@
   "glass glass"
   "alex alex"
   "info info";
+}
+.cards h2 {
+  font-size: 30px;
+  color: rgb(17, 48, 37);
+  margin-bottom: 1.4rem;
+}
+.cards h3 {
+  margin-bottom: 1.4rem;
+  font-size: 22px;
+}
+.cards p {
+  font-size: 12px;
+  line-height: 18px;
+  color: rgb(30, 66, 57);
+  margin-bottom: 1.4rem;
+}
+.card {
+  padding: 37px;
 }
 
 #join {
@@ -19,6 +38,7 @@
   width: 96%;
   border-radius: 8px;
 }
+
 #col {
   grid-area: col;
 }
@@ -27,30 +47,38 @@
   width: 96%;
   border-radius: 8px;
 }
+
 #grow {
   grid-area: grow;
 }
+
 #emma {
+  aspect-ratio: 4 / 2;
+  border-radius: 8px;
+  background-image: url("../../assets/gpmsphxlwmma8ftewbub.jpeg");
+  background-position: right;
+  background-size: cover;
+  background-repeat: no-repeat;
   grid-area: emma;
-  position: relative;
+  width: 95%;
 }
 #emma div {
-  position: absolute;
-  top: 40%;
-  transform: translateY(-50%);
-  text-align: center;
-  width: 46%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  font-size: 19px;
-  padding-left: 40px;
+  width: 50%;
+  padding: max(3vh, 1rem);
+}
+#emma h3 {
+  text-align: center;
 }
 #emma img {
+  min-width: 305px;
   width: 95%;
   border-radius: 8px;
+  margin: 0 auto;
 }
+
 #glass {
   display: grid;
   place-items: center;
@@ -71,35 +99,42 @@
 #gd-date {
   font-size: 10px;
 }
+
 #alex {
   display: flex;
   justify-content: center;
   grid-area: alex;
-  width: 100;
+  width: 80%;
 }
 #alex-container {
-  width: 42%;
-  position: relative;
-}
-#alex img {
+  display: flex;
+  justify-content: start;
+  aspect-ratio: 3 / 2;
+  width: 54%;
   border-radius: 8px;
-  width: 100%;
+  background-image: url("../../assets/zjmlypzlupi1qk4zuykn.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-left: 20px;
+  padding-top:  min(60px, 4vh);;
 }
 #alex-text {
-  position: absolute;
-  padding-left: 1.4rem;
-  top: 45%;
-  width: 55%;
-  transform: translateY(-50%);
+  width: 59%;
   text-align: center;
   font-weight: 800;
 }
 #alex-text p {
+  font-size: 14px;
   margin-bottom: 0.5rem;
+}
+#alex-text p:last-child {
+  font-size: 12px;
 }
 #alex-text p:last-child {
   font-weight: 400;
 }
+
 #info {
   grid-area: info;
   display: flex;
@@ -108,13 +143,76 @@
   margin-bottom: 6rem;
 }
 #info div {
+  width: 44%;
+  text-align: center;
   display: grid;
   place-items: center;
-  padding: 64px;
   border-radius: 16px;
   margin: 0 8px;
+  padding: 55px;
+  margin: 0 1em;
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
 }
-.card {
-  padding: 37px;
+#info h3 {
+  width: 93%;
 }
+#info h2 {
+  font-size: 22px;
+}
+
+
+@media (max-width: 992px) {
+  .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  img {
+    max-width: 80%;
+  }
+  #info {
+    flex-direction: column;
+    width: 80%;
+  }
+  #info div {
+    width: 100%;
+    margin: 0 auto;
+    padding: 55px;
+    margin-bottom: 2em;
+  }
+  #emma {
+    background-position: 84% 0%;
+  }
+  #emma div {
+    padding-top: 22px;
+  }
+  #alex {
+    width: 80%;
+  }
+  #alex-container {
+    min-width: fit-content;
+    min-height: 235px;
+    padding-top: 22px;
+  }
+ }
+
+ @media (max-width: 400px) {
+  .cards {
+    row-gap: 1.4rem;
+    font-size: 16px;
+  }
+  #emma {
+    background-image:
+    linear-gradient(to right, rgba(245, 246, 252, 0.3), rgba(255, 255, 255, 0)),
+    url("../../assets/gpmsphxlwmma8ftewbub.jpeg");
+    width: 80%;
+  }
+  #info {
+    margin: 2rem 0 1rem 0;
+  }
+  #glass {
+    margin: 3.4rem 0;
+  }
+ }
