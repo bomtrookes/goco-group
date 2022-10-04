@@ -7,7 +7,7 @@
   background-position: center;
   height: 560px;
   color: white;
-  margin-bottom: 4rem;
+  margin-bottom: 6rem;
 }
 #cover-title {
   display: grid;
@@ -15,5 +15,18 @@
   font-family: 'Montserrat', sans-serif;
 }
 #cover-title h2 {
-  margin-bottom: 2rem;
+  font-size: 32px;
+  padding-top: 40px;
+  margin-bottom: 3rem;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 400px) {
+  #cover {
+    height: 360px;
+    margin-bottom: 1.4rem;
+  }
+  #cover-title {
+    padding: 0 32px;
+  }
 }
