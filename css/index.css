@@ -1,5 +1,5 @@
-@import "./config/reset.css";
 @import "./config/fonts.css";
+@import "./config/reset.css";
 
 @import "./components/burger.css";
 @import "./components/buttons.css";
