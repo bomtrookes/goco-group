@@ -37,3 +37,12 @@
 #nav-btn:hover, .gc-btn:hover, .gd-btn:hover {
   background-color: orange;
 }
+
+@media (hover: none) {
+  #nav-btn:hover, .gc-btn:hover {
+    background-color: rgb(76, 163, 141) !important;
+  }
+  .gd-btn:hover {
+    background-color: rgb(77, 171, 64) !important;
+  }
+}
